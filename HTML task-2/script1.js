@@ -10,7 +10,7 @@ form.addEventListener('submit', function(event) {
     const satisfaction = document.querySelector('input[name="satisfaction"]:checked').value;
     const improvement = document.getElementById('improvement').value;
 
-    // Display collected form data
+
     alert(`
         Name: ${name}
         Email: ${email}
