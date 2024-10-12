@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="container">
+       
+        <div>  <h2>Customer Survey Form</h2></div>
+        <!-- Name and Email on the same line -->
+        <div class="input-row">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+
+        <form id="surveyForm">
+            <div class="input-group">
+                <label>Is this the first time you are using our products & service?</label><br>
+                <input type="radio" id="firstYes" name="firstTime" value="Yes" required> Yes
+                <input type="radio" id="firstNo" name="firstTime" value="No" required> No
+            </div>
+
+            <div class="input-group">
+                <label>Would you suggest our services to friends and colleagues?</label><br>
+                <input type="radio" id="suggestYes" name="suggestion" value="Yes" required> Yes
+                <input type="radio" id="suggestNo" name="suggestion" value="No" required> No
+            </div>
+
+            <div class="input-group">
+                <label>How satisfied are you with our company overall?</label><br>
+                <input type="radio" id="satisfied" name="satisfaction" value="Satisfied" required> Satisfied
+                <input type="radio" id="undecided" name="satisfaction" value="Undecided" required> Undecided
+                <input type="radio" id="unsatisfied" name="satisfaction" value="Unsatisfied" required> Unsatisfied
+            </div>
+
+            <div class="input-group">
+                <label for="improvement">Do you have suggestions to improve our service?</label>
+                <textarea id="improvement" name="improvement" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
